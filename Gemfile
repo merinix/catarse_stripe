@@ -7,14 +7,14 @@ gemspec
 source :gemcutter
 source 'http://gems.github.com'
 
-gem 'rails', '3.2.11'
+gem 'rails'
 
 gem 'sidekiq', '= 2.4.0'
 gem 'sinatra', require: false
 gem 'foreman'
 gem 'best_in_place'
 
-gem 'state_machine', require: 'state_machine/core'
+#gem 'state_machine', require: 'state_machine/core'
 
 # Database and data related
 gem 'pg'
@@ -22,11 +22,11 @@ gem 'pg_search'
 gem 'postgres-copy'
 gem 'schema_plus'
 
-gem 'catarse_paypal_express', git: 'git://github.com/devton/catarse_paypal_express.git'
+#gem 'catarse_paypal_express', git: 'git://github.com/devton/catarse_paypal_express.git'
 #gem 'catarse_paypal_express', path: '../catarse_paypal_express'
-gem 'catarse_moip', git: 'git://github.com/devton/catarse_moip.git'
+#gem 'catarse_moip', git: 'git://github.com/devton/catarse_moip.git'
 #gem 'catarse_moip', path: '../catarse_moip'
-gem 'moip', git: 'git://github.com/moiplabs/moip-ruby.git'
+#gem 'moip', git: 'git://github.com/moiplabs/moip-ruby.git'
 
 gem 'draper'
 
@@ -44,7 +44,7 @@ gem 'omniauth-github', '~> 1.0.1'
 gem 'omniauth-linkedin', '~> 0.0.6'
 gem 'omniauth-yahoo', '~> 0.0.4'
 gem 'devise', '1.5.3'
-gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
+gem 'cancan_strong_parameters'
 
 
 # Error reporting
@@ -52,7 +52,7 @@ gem "airbrake"
 
 # Email marketing
 #gem 'mailchimp'
-gem 'catarse_mailchimp', git: 'git://github.com/devton/catarse_mailchimp'
+#gem 'catarse_mailchimp', git: 'git://github.com/devton/catarse_mailchimp'
 
 # HTML manipulation and formatting
 gem 'formtastic', "~> 2.1.1"
@@ -88,7 +88,7 @@ gem 'http_accept_language'
 gem 'routing-filter' #, :git => 'git://github.com/svenfuchs/routing-filter.git'
 
 # Administration
-gem "meta_search", "1.1.3"
+gem 'ransack'
 
 # Payment
 gem 'activemerchant', '1.29.3', require: 'active_merchant'
