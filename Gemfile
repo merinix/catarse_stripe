@@ -15,7 +15,7 @@ gem 'schema_plus'
 
 
 
-gem 'draper'
+#gem 'draper'
 
 # Frontend stuff
 gem 'slim'
@@ -25,9 +25,9 @@ gem 'initjs'
 # Authentication and Authorization
 #gem 'omniauth', "~> 1.1.0"
 gem 'omniauth-stripe-connect'
-gem 'devise', '1.5.3'
+gem 'omniauth'
+gem 'devise'
 gem 'cancan_strong_parameters'
-
 
 # Error reporting
 gem "airbrake"
@@ -49,7 +49,5 @@ gem 'routing-filter' #, :git => 'git://github.com/svenfuchs/routing-filter.git'
 
 
 # Payment
-#gem 'activemerchant', '1.29.3', require: 'active_merchant'
-gem 'pg'
 gem 'activemerchant', '>= 1.17.0', require: 'active_merchant'
-gem 'slim-rails'
+
